@@ -1,0 +1,26 @@
+.userInfo img{
+  margin: 2.5em 0;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  align-self: center;
+}
+
+.userInfo h1 {
+  margin: 0 1em;
+}
+
+.userInfo md-content {
+  background-color : #00bfa5;
+  position: absolute;
+  height: 100%;
+}
+
+.userInfo h3 {
+  margin: 1.7em;
+}
+
+.navbar-list {
+  width: 30em;
+  height: 100%;
+}

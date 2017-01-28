@@ -1,0 +1,26 @@
+<div class="no-scroll">
+  <md-toolbar layout="row" flex>
+    <h1 style="{'align-self': 'center'}">{{$ctrl.appHeader}}</h1>
+  </md-toolbar>
+
+  <div flex layout="row">
+    <div layout="column">
+      <filter-input
+        items="$ctrl.users"
+        handle-search-text-change="$ctrl.filterData(searchText)"
+        search-text="$ctrl.searchText"
+        item-text="'item.name'"
+        placeholder-text="$ctrl.placeholder"
+        item-name="'name'"
+      >
+      </filter-input>
+      <user-list
+        users="$ctrl.users"
+        on-handle-click="$ctrl.getSelectedUser(index)"
+        list-header="$ctrl.listHeader"
+      >
+      </user-list>
+    </div>
+    <user-info user="$ctrl.user"></user-info>
+  </div>
+</div>
